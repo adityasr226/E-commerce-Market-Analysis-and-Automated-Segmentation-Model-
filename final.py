@@ -1,22 +1,4 @@
-"""
-E-Commerce Market Analysis — Full Streamlit Multi-Dashboard App
-File: ecom_market_analysis_app.py
-Author: ChatGPT (GPT-5 Thinking mini)
-Description:
-A professional, single-file Streamlit application implementing the full multi-dashboard
-pipeline you requested: EDA, RFM (with K-Means), Demand Forecasting (Prophet),
-Price Sensitivity Analysis, and an AutoML module that compares multiple classifiers
-(LogisticRegression, RandomForest, XGBoost, CatBoost, GradientBoosting, KNN).
 
-Notes:
-- The app reads the uploaded dataset (preferred). If no file is uploaded and a server
-  path exists (e.g. /mnt/data/Online Retail (1).xlsx), it will use that file — but
-  only if the path actually exists on the machine running the app. This avoids
-  FileNotFoundError on local machines.
-- Optional dependencies (xgboost, catboost, prophet, vaderSentiment) are imported
-  lazily and the app degrades gracefully if they're missing.
-- Run: streamlit run ecom_market_analysis_app.py
-"""
 
 import streamlit as st
 st.set_page_config(layout='wide', page_title='E-Commerce Market Analysis', initial_sidebar_state='expanded')
